@@ -8,27 +8,69 @@
   <style>
     body {
       scroll-behavior: smooth;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      color: rgb(2, 1, 1);
+      font-family: 'Arial', sans-serif;
     }
     header {
-      background-color: #f7addb;
-      color: white;
-      padding: 60px 0;
+      background-color: rgba(247, 173, 219, 0.9);
+      color: rgb(15, 12, 12);
+      padding: 80px 0;
       text-align: center;
+      border-bottom: 4px solid #020101;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     }
     header img {
       border-radius: 50%;
-      width: 150px;
-      height: 150px;
+      width: 180px;
+      height: 180px;
       object-fit: cover;
       margin: 20px 0;
+      border: 4px solid white;
+    }
+    h1, h2 {
+      font-weight: bold;
     }
     section {
       padding: 60px 0;
     }
     footer {
-      background-color: #f8f9fa;
+      background-color: rgba(248, 249, 250, 0.9);
       padding: 20px 0;
       text-align: center;
+      color: black;
+      border-top: 4px solid #ddd;
+    }
+    .card-body a {
+      color: white;
+      background-color: #007bff;
+      border-radius: 5px;
+      padding: 10px 20px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .card-body a:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 10px;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .card-img-top {
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .card-img-top:hover {
+      transform: scale(1.1);
+    }
+    .container h2 {
+      margin-bottom: 30px;
     }
   </style>
 </head>
@@ -39,7 +81,6 @@
     <div class="container">
       <h1>Halo, Saya Khirani Nur Azizah</h1>
       <p>Mahasiswa prodi Pendidikan Teknologi Informasi | Semester 2 | Universitas Lampung</p>
-      <!-- Tambahkan Foto Profil -->
       <img src="foto profil.jpg" alt="Foto Profil Khirani Nur Azizah">
     </div>
   </header>
@@ -47,65 +88,114 @@
   <!-- Tentang Saya -->
   <section id="tentang" class="bg-light">
     <div class="container">
-      <h2 class="mb-4">Tentang Saya</h2>
-      <p>Saya adalah seorang mahasiswi yang berkuliah di Universitas Lampung prodi Pendidikan Teknologi Informasi, Fakultas FKIP Universitas Lampung, semester 2.</p>
+      <h2 class="mb-4 text-center">Tentang Saya</h2>
+      <p class="text-center">Saya adalah seorang mahasiswi yang berkuliah di Universitas Lampung prodi Pendidikan Teknologi Informasi, Fakultas FKIP Universitas Lampung, semester 2. Disini saya membuat website untuk pengumpulan tugas dan kuis Mata Kuliah Grafika Komputer.</p>
     </div>
   </section>
 
-  <!-- Proyek -->
+  <!-- Portofolio Pengumpulan Tugas -->
   <section id="portofolio pengumpulan tugas">
     <div class="container">
-      <h2 class="mb-4">Portofolio Pengumpulan Tugas</h2>
+      <h2 class="mb-4 text-center">Portofolio Pengumpulan Tugas</h2>
       <div class="row">
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
+          <div class="card h-100 shadow-sm">
             <img src="foto tokoh.jpg" class="card-img-top" alt="Proyek 1">
             <div class="card-body">
               <h5 class="card-title">Proyek 1</h5>
               <p class="card-text">Tokoh Perintis Grafika Komputer.</p>
-              <a href="#" class="btn btn-primary">Lihat</a>
+              <a href="https://drive.google.com/drive/folders/1mJozAj0fVL7qMYGZjL0VpQix05kk_RZ2" class="btn btn-primary">Lihat</a>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
+          <div class="card h-100 shadow-sm">
             <img src="foto garis.jpg" class="card-img-top" alt="Proyek 2">
             <div class="card-body">
               <h5 class="card-title">Proyek 2</h5>
               <p class="card-text">Membuat Garis DDA dan Brasenham.</p>
-              <a href="#" class="btn btn-primary">Lihat</a>
+              <a href="https://drive.google.com/drive/folders/1M665OXdoJ-GJjmRTZZsmG569_PoSzauj" class="btn btn-primary">Lihat</a>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
+          <div class="card h-100 shadow-sm">
             <img src="foto lingkaran.jpg" class="card-img-top" alt="Proyek 3">
             <div class="card-body">
               <h5 class="card-title">Proyek 3</h5>
               <p class="card-text">Membuat Lingkaran Mindpoint dan Brasenham.</p>
-              <a href="#" class="btn btn-primary">Lihat</a>
+              <a href="https://drive.google.com/drive/folders/1ADeGhsjylKpl5-LVdk1eCQvlVL0WnN7Q" class="btn btn-primary">Lihat</a>
             </div>
           </div>
         </div>
-    <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="foto kurva.jpg" class="card-img-top" alt="Proyek 3">
-          <div class="card-body">
-            <h5 class="card-title">Proyek 4</h5>
-            <p class="card-text">Algoritma Pembentukan Kurva.</p>
-            <a href="#" class="btn btn-primary">Lihat</a>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="foto kurva.jpg" class="card-img-top" alt="Proyek 4">
+            <div class="card-body">
+              <h5 class="card-title">Proyek 4</h5>
+              <p class="card-text">Algoritma Pembentukan Kurva.</p>
+              <a href="https://drive.google.com/drive/folders/10w91nNQJeNPmhui8vS1yz0ODGpcGGXZl" class="btn btn-primary">Lihat</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="kuis 1.jpg" class="card-img-top" alt="Kuis 1">
+            <div class="card-body">
+              <h5 class="card-title">Kuis 1</h5>
+              <p class="card-text">Kuis 1 Persamaan Misteri.</p>
+              <a href="https://drive.google.com/drive/folders/1mSt8lTg-v0RJixilYy0OE3ueAdWAvgH8" class="btn btn-primary">Lihat</a>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="kuis 2.jpg" class="card-img-top" alt="Kuis 2">
+            <div class="card-body">
+              <h5 class="card-title">Kuis 2</h5>
+              <p class="card-text">Kuis 2 Transfromasi Matriks.</p>
+              <a href="https://drive.google.com/drive/folders/1mWnbxOzVbpnbScQ7k93loHI5IYyrokM9" class="btn btn-primary">Lihat</a>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="kuis 3.jpg" class="card-img-top" alt="Kuis 3">
+            <div class="card-body">
+              <h5 class="card-title">Kuis 3</h5>
+              <p class="card-text">Kuis 3 Line Clipping Algorithm.</p>
+              <a href="https://drive.google.com/drive/folders/1mfIcOSOTjkjJ8MmoWSTcAl3cZcmYKDX9" class="btn btn-primary">Lihat</a>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="kuis 4.jpg" class="card-img-top" alt="Kuis 4">
+            <div class="card-body">
+              <h5 class="card-title">Kuis 4</h5>
+              <p class="card-text">Kuis 4 Polygon Clipping Algorithm.</p>
+              <a href="https://drive.google.com/drive/folders/1mm_YAC0duTqTbvGHXN_5zwlGdYtIBLhA" class="btn btn-primary">Lihat</a>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="latihan proyeksi.jpg" class="card-img-top" alt="Proyeksi">
+            <div class="card-body">
+              <h5 class="card-title">Latihan Proyeksi</h5>
+              <p class="card-text">Latihan Proyeksi.</p>
+              <a href="https://drive.google.com/drive/folders/1mxmwF8rwpiDAzSTgTdvYQSRGklqMJqPE" class="btn btn-primary">Lihat</a>
+         </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
   </section>
-
 
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 Khirani Nur Azizah. Semua Hak Dilindungi.</p>
+      <p>&copy; 2025 Khirani Nur Azizah. 2413025039.</p>
     </div>
   </footer>
 
